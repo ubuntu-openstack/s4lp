@@ -1,0 +1,12 @@
+ro locale=en_US auto=true priority=critical apt-setup/proposed=true
+url=ftp://10.13.0.2/preseed/s4lp/19.04/s4lp9.cfg
+s390-netdevice/choose_networktype=qeth                             
+s390-netdevice/qeth/layer2=true s390-netdevice/qeth/port=0         
+s390-netdevice/qeth/choose=0.0.c000-0.0.c001-0.0.c002              
+netcfg/get_ipaddress=10.13.3.9 netcfg/get_netmask=255.255.255.0
+netcfg/get_gateway=10.13.3.1 netcfg/get_nameservers=10.13.3.1
+netdevice/qeth/layer2=true netcfg/confirm_static=true              
+netcfg/use_autoconfig=0 netcfg/disable_dhcp=true netcfg/vlan_id=2893
+hostname=s4lp9 domain=z-openstack.local network-console/start=note
+network-console/password=pass4inst                              
+network-console/password-again=pass4inst
