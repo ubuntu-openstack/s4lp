@@ -1,4 +1,4 @@
-ro locale=en_US auto=true priority=critical apt-setup/proposed=false
+ro locale=en_US auto=true priority=critical apt-setup/proposed=true
 url=ftp://10.13.0.2/preseed/s4lp/18.04.3/s4lp5.cfg
 s390-netdevice/choose_networktype=qeth                             
 s390-netdevice/qeth/layer2=true s390-netdevice/qeth/port=0         
